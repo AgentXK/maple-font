@@ -511,8 +511,8 @@ class FontConfig:
         name_arr = [word.capitalize() for word in self.family_name.split(" ")]
         if self.use_normal_preset:
             name_arr.append("Normal")
-        if not self.enable_liga:
-            name_arr.append("NL")
+        # if not self.enable_liga:
+        #     name_arr.append("NL")
         if self.debug:
             name_arr.append("Debug")
         self.family_name = " ".join(name_arr)
